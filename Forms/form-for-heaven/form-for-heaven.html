@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-1.7.2.js"
+      integrity="sha256-FxfqH96M63WENBok78hchTCDxmChGFlo+/lFIPcZPeI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="form-for-heaven.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="ltd">St. Peter & the Preachers <sup>Ltd</sup></div>
+    <div class="login-box">
+      <h2>Log In Here</h2>
+      <form action="mailto:kholodihor@gmail.com" method="POST">
+        <fieldset>
+          <p>Name</p>
+          <input type="text" name="name" placeholder="" required />
+        </fieldset>
+
+        <fieldset>
+          <p>Date of Birth</p>
+          <input
+            class="date"
+            type="text"
+            name="date"
+            data-mask="00/00/0000"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <p>Nationality</p>
+          <input type="text" name="name" required placeholder="" />
+        </fieldset>
+        <fieldset>
+          <p>Your Message</p>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+          <input type="submit" name="submit" value="Send" />
+        </fieldset>
+      </form>
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.date').mask('00/00/0000');
+      });
+    </script>
+  </body>
+</html>
