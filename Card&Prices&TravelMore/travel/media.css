@@ -1,0 +1,45 @@
+@media screen and (max-width: 682px) {
+  section.spain .box,
+  section.sea .box {
+    margin: 0;
+    width: 80%;
+  }
+  section.sea .box {
+    margin-left: 20%;
+  }
+  section.review .slide .user {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header.intro .search-form .search-box {
+    width: 40rem;
+  }
+  article.places .text {
+    padding: 2.5%;
+  }
+  article.places .text .btn {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+    html{
+        font-size: 50%;
+    }
+  header.intro .search-form .search-box {
+    width: 35rem;
+  }
+  
+}
+@media screen and (max-width: 330px) {
+  header.intro .search-form .search-box {
+    width: 30rem;
+  }
+  section.spain .box,
+  section.sea .box {
+    margin: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root {
+  --main-color: gold;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+    background: #fff;
+  font-family: 'Raleway', 'Roboto', sans-serif;
+}
+
+.header-container {
+
+   padding: 40px;
+  text-align: center;
+}
+
+.header-container span {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #3c3c3c;
+  font-family: 'Raleway';
+}
+.header-container h1 {
+  color: var(--main-color);
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'Roboto';
+}
+.header-container img {
+  margin-top: 60px;
+  margin-bottom: -40px;
+}
+.lines {
+  display: flex;
+  justify-content: center;
+}
+.line-left {
+  width: 250px;
+  height: 1px;
+  background: var(--main-color);
+  margin-right: 10px;
+}
+.line-right {
+  width: 250px;
+  height: 1px;
+  background: var(--main-color);
+  margin-left: 10px;
+}
+
+.block-left {
+  width: 50%;
+  height: 450px;
+  padding: 40px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid var(--main-color);
+}
+
+.block-left img {
+  width: 250px;
+  height: 330px;
+  border: 2px solid var(--main-color);
+}
+
+.block-left svg,
+.block-left svg rect {
+  position: absolute;
+  top: 265px;
+  left: 193px;
+  width: 290px;
+  height: 355px;
+  fill: transparent;
+}
+
+.block-left svg rect {
+  stroke: var(--main-color);
+  stroke-width: 4;
+  transition: 1s;
+  stroke-dasharray: 0, 340;
+}
+.block-left svg:hover rect {
+  stroke-dasharray: 340, 0;
+  stroke-dashoffset: 330;
+  fill: rgb(248, 212, 8, 0.4);
+}
+.block-right {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  width: 50%;
+  height: 450px;
+  background: #fff;
+  text-align: center;
+  padding: 40px;
+}
+.block-right h1 {
+  color: #3c3c3c;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  font-family: 'Roboto';
+}
+
+.block-right svg {
+  height: 30px;
+}
+.block-right .social {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.block-right .social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e8ecee;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.block-right .social-icon {
+  display: block;
+  fill: #c6cacc;
+  width: 15px;
+  height: 15px;
+  transition: border 0.3s linear ease;
+}
+
+.block-right .social-item:hover {
+  fill: #000;
+  border: 2px solid var(--main-color);
+}
+.block-right .social-item:hover .social-icon {
+  fill: #3c3c3c;
+}
+.block-right .social a i.fa-chevron-right {
+  position: absolute;
+  left: 610px;
+  width: 40px;
+  height: 70px;
+  font-size: 40px;
+  color: var(--main-color);
+}
+.block-right .social a i.fa-chevron-left {
+  position: absolute;
+  right: 1280px;
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  color: var(--main-color);
+}
+.block-right p {
+  margin-top: 50px;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+
+.block-right .btn {
+  padding: 0.5rem 1.3rem;
+  border: 1px solid var(--main-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  color: #3c3c3c;
+}
+.block-right .btn:hover {
+  background: var(--main-color);
+  color: #000;
+}
+.circles {
+  position: absolute;
+  left: 42.5%;
+  width: 15%;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circles span {
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--main-color);
+  background: var(--main-color);
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.circles span:nth-child(2) {
+  background: transparent;
+}
+

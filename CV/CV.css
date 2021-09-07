@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'STIX Two Math', sans-serif;
+}
+
+body {
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 50px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+/* left side */
+.container .left_side {
+  position: relative;
+  background: #003147;
+  padding: 40px;
+}
+
+.profileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #647c90;
+}
+.image {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profileText .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profileText h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+.profileText span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.contactInfo {
+  padding-top: 40px;
+}
+.title {
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.contactInfo ul {
+  position: relative;
+}
+.contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+.contactInfo ul li span {
+  color: #fff;
+  font-weight: 300;
+}
+.contactInfo ul li a {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+}
+.contactInfo.education li {
+  margin-bottom: 15px;
+}
+
+.contactInfo.education h5 {
+  color: #03a9f4;
+  font-weight: 500;
+}
+.contactInfo.education h4 {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* right side */
+
+.container .right_side {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+.about {
+  margin-bottom: 50px;
+}
+
+.about:last-child {
+  margin-bottom: 0;
+}
+
+.title2 {
+  color: #050a30;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.about .box .year_company {
+  min-width: 150px;
+}
+.about .box .year_company h5 {
+  color: #848c90;
+  font-weight: 600;
+}
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: #125270;
+  font-size: 16px;
+}
+.some_pictures {
+  margin: auto 20px;
+}
