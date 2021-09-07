@@ -1,0 +1,379 @@
+@font-face {
+  font-family: 'Avenir Next';
+  src: url(fonts/AvenirNextLTPro-It.otf), url(fonts/AvenirNextLTPro-Regular.otf),
+    url(fonts/AvenirNextLTPro-Bold.otf);
+}
+
+:root {
+  --text-color: #13253a;
+  --blue-color: #2557ab;
+  --bg-color: #f4f6f7;
+  --coral-bg-color: #ff7f57;
+  --dark-bg-color: #11364e;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 27px;
+  font-style: normal;
+  font-family: 'Avenir Next';
+}
+
+body {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  background: var(--bg-color);
+  font-family: 'Avenir Next', sans-serif;
+}
+.header__container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header__box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 35px 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color);
+  opacity: 0.7;
+  transition: all 0.1s ease;
+}
+.nav__link:hover {
+  opacity: 1;
+}
+
+.advertiser__text-content {
+  position: absolute;
+  width: 50%;
+  height: 800px;
+  top: 100px;
+  left: 0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.advertiser__text-content span {
+  color: var(--blue-color);
+  font-size: 14px;
+  font-weight: 400;
+}
+.advertiser__text-content h1 {
+  margin-left: 25px;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 800;
+}
+.advertiser__text-content p {
+  padding: 10px 50px;
+  margin-bottom: 20px;
+}
+
+.advertiser__text-content .advertiser__btn-lg {
+  margin-left: 10px;
+  margin-top: 30px;
+  padding: 15px 20px;
+  color: #fff;
+  background: var(--coral-bg-color);
+  border: none;
+  border-radius: 5px;
+}
+.advertiser__text-content .advertiser__btn-lg:hover {
+  background: var(--blue-color);
+  color: #fff;
+}
+.advertiser__img-content {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 50%;
+  height: 800px;
+}
+
+.features {
+  position: absolute;
+  top: 650px;
+  left: 60px;
+  width: 1200px;
+  height: 500px;
+  padding: 50px;
+  background: #fff;
+  text-align: center;
+}
+.features h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.features span {
+  color: var(--blue-color);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+.features-box {
+  display: flex;
+  margin: 10px 0;
+}
+
+.features-box__features-item {
+  width: 33%;
+  padding: 0 40px;
+  text-align: center;
+  margin: 25px 0;
+  color: var(--text-color);
+}
+.features-box__features-icon {
+  margin-bottom: 15px;
+}
+.features-box__features-title {
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.kpi {
+  position: absolute;
+  top: 1200px;
+  left: 100px;
+  width: 1200px;
+  height: 150px;
+  padding: 20px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kpi .kpi__item {
+  width: 30%;
+  height: 100px;
+  text-align: center;
+}
+.kpi h1 i {
+  color: var(--coral-bg-color);
+}
+.kpi .kpi__item p {
+  color: var(--blue-color);
+}
+
+.about {
+  position: absolute;
+  left: 75px;
+  top: 1350px;
+  padding: 50px;
+  width: 1200px;
+  background: #fff;
+  text-align: center;
+}
+.about h1 {
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+.about span {
+  color: var(--blue-color);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+.about__text {
+  display: flex;
+}
+.about__text-left {
+  width: 40%;
+  margin: 0 50px;
+  padding: 20px;
+}
+.about__text-left p:nth-child(1) {
+  color: #5e5e5e;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.about__text-right {
+  width: 60%;
+  width: 40%;
+  margin: 0 50px;
+  padding: 20px;
+}
+.about__logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.info {
+  position: absolute;
+  width: 1200px;
+  left: 100px;
+  top: 2050px;
+}
+.info__text-content {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+  padding: 60px 30px;
+}
+.info__text-content h1 {
+  padding: 20px;
+  font-size: 35px;
+  font-weight: 800;
+  text-align: start;
+}
+.info__text-content p {
+  padding: 10px 50px;
+  margin-bottom: 20px;
+}
+.info__text-content ul {
+  margin-top: 30px;
+}
+.info__text-content ul li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.info__text-content ul li i {
+  margin-right: 15px;
+  color: var(--coral-bg-color);
+}
+.info__img-content {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 50%;
+}
+
+.start {
+  position: absolute;
+  left: 100px;
+  top: 2550px;
+  width: 1200px;
+  background: var(--coral-bg-color);
+  text-align: center;
+  color: #fff;
+  padding: 70px 150px;
+}
+.start span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+.start h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.start .start__btn {
+  margin-top: 40px;
+  padding: 13px 35px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: var(--blue-color);
+  color: #fff;
+  box-shadow: -9px 23px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.start .start__btn:hover {
+  background: #fff;
+  color: #13253a;
+}
+
+.contact {
+  position: absolute;
+  top: 2900px;
+  left: 100px;
+  width: 1200px;
+  height: 700px;
+  background: var(--dark-bg-color);
+  text-align: center;
+  font-family: 'Avenir Next';
+}
+fieldset {
+  outline: none;
+  border: none;
+}
+.contact h1 {
+  color: #fff;
+  margin: 50px auto;
+}
+.contact input,
+.contact textarea {
+  margin-bottom: 20px;
+  width: 30%;
+  font-size: 18px;
+  color: #fff;
+}
+.contact input[type='text'],
+.contact input[type='email'] {
+  border: none;
+  outline: none;
+  height: 30px;
+  background: transparent;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+.contact input[type='text']:focus,
+.contact input[type='email']:focus,
+.contact textarea:focus {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 1);
+}
+
+textarea::placeholder,
+input::placeholder {
+  font-size: 12px;
+}
+.contact textarea {
+  border: none;
+  outline: none;
+  width: 30%;
+  height: 100px;
+  background: transparent;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+.contact span {
+  font-size: 12px;
+  color: #fff;
+}
+.contact input[type='submit'] {
+  margin-top: 30px;
+  padding: 15px 25px;
+  color: #fff;
+  background: var(--coral-bg-color);
+  border: none;
+  border-radius: 5px;
+}
+.contact input[type='submit']:hover {
+  background: var(--blue-color);
+  color: #fff;
+}
+.copyright {
+  position: absolute;
+  top: 3550px;
+  left: 100px;
+  height: 50px;
+  width: 1200px;
+  background: var(--text-color);
+}
+.copyright p {
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+}
