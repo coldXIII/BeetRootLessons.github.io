@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import '_variables.scss', '_mixins.scss', '_common.scss';
+
+// header
+header.header {
+  padding: 2rem 9%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+
+  .logo {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: $white;
+    text-transform: uppercase;
+
+    object {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+  .navbar a {
+    font-size: 2rem;
+    color: $white;
+    padding: 0 1rem;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+  .fa-search {
+    margin-left: 10rem;
+    &:hover {
+      text-shadow: 0 0 3rem $yellow, 0 0 7rem $yellow, 0 0 13rem $yellow;
+    }
+  }
+  #menu-btn {
+    font-size: 4.5rem;
+    color: $white;
+    cursor: pointer;
+    background: none;
+    padding: 1rem 1.5rem;
+    display: none;
+  }
+}
+
+// intro
+section.intro {
+  .bg img {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .intro-content {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    left: 55%;
+    width: 40rem;
+    height: 40rem;
+
+    h1 {
+      font: normal 400 110px $GrandHotel;
+      letter-spacing: 0.2rem;
+      color: $yellow;
+    }
+    p {
+      @include paragraph($white);
+    }
+  }
+}
+
+// bestsellers
+
+section.bestseller {
+  width: 100%;
+
+  .bestseller-title {
+    text-align: center;
+    padding: 3rem 15%;
+
+    h3 {
+      font: normal 400 10rem $GrandHotel;
+      color: $black;
+    }
+    p {
+      @include paragraph($lightcolor);
+    }
+  }
+  .bestseller-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+
+    .bestseller-item {
+      padding: 1rem;
+      text-align: center;
+     
+
+      h4 {
+        font: normal 400 5rem $GrandHotel;
+        color: $black;
+        padding: 1.7rem;
+      }
+      img {
+        width: 30rem;
+        height: 30rem;
+        object-fit: cover;
+
+        &:hover {
+          transform: scale(1.1);
+                 }
+      }
+    }
+  }
+}
+
+// central
+
+section.central {
+  position: relative;
+  img {
+    background-position: center;
+    background-size: cover;
+  }
+  .content_oriental-taste {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10rem 0;
+
+    .image {
+      margin: 0 7%;
+      padding: 2rem;
+      img {
+        width: 40rem;
+        height: 40rem;
+        object-fit: cover;
+      }
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
+    .text {
+      text-align: start;
+      margin: 7%;
+      padding: 1rem;
+
+      h2 {
+        font: normal 400 8rem $GrandHotel;
+        color: $yellow;
+      }
+      p {
+        @include paragraph($white);
+      }
+    }
+  }
+  .bg3 {
+    margin-top: -40rem;
+  }
+  .statistics {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    padding: 5rem 7%;
+    text-align: center;
+    margin: 20rem 0 2rem;
+
+    .text {
+      padding: 2rem 10%;
+
+      h2 {
+        font: normal 400 8rem $GrandHotel;
+        color: $yellow;
+      }
+      p {
+        @include paragraph($white);
+      }
+    }
+    .benefits {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5rem 0;
+
+      .benefit-item {
+        border: 2px solid $white;
+        border-radius: 50%;
+        width: 18rem;
+        height: 18rem;
+        margin: 7rem 3rem;
+        padding: 5% 4%;
+        line-height: 2rem;
+        text-align: center;
+        font: normal 700 2.2rem 'Montserrat';
+        color: $white;
+
+        span {
+          color: $yellow;
+        }
+      }
+    }
+  }
+  .bg4 {
+    margin-top: -5rem;
+    z-index: 100;
+    background-position: center;
+    background-size: cover;
+  }
+  .content_meatballs {
+    position: absolute;
+    top: 67%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20rem 0;
+
+    .image {
+      margin: 0 5%;
+      padding: 2rem;
+
+      img {
+        width: 40rem;
+        height: 40rem;
+        object-fit: cover;
+      }
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
+    .text {
+      text-align: start;
+      margin: 5%;
+      padding: 1rem;
+
+      h2 {
+        font: normal 400 8rem $GrandHotel;
+        color: $yellow;
+      }
+      p {
+        @include paragraph($white);
+      }
+    }
+  }
+}
+
+// lenora
+
+section.review {
+  position: relative;
+
+  .bg5 {
+    margin-top: 0;
+    z-index: 10;
+  }
+  .bg6 {
+    margin-top: -70rem;
+  }
+  .text {
+    margin: auto;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0 15%;
+    text-align: center;
+
+    h2 {
+      font: normal 400 8rem $GrandHotel;
+    }
+
+    p {
+      @include paragraph($black);
+    }
+  }
+}
+
+//  subscribe
+
+section.subscribe {
+  position: relative;
+  background: #f4f4f4;
+
+  img {
+    background-position: center;
+    background-size: cover;
+  }
+  .text {
+    margin: auto;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0 15%;
+    text-align: center;
+
+    h2 {
+      font: normal 400 8rem $GrandHotel;
+    }
+
+    p {
+      @include paragraph($black);
+    }
+  }
+
+  form .input input {
+    width: 40rem;
+    padding: 1.1rem 1rem;
+    border: 1px solid #000;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: $black;
+    font: normal 500 1.5rem 'Montserrat';
+
+    &:focus {
+      background: $yellow;
+    }
+    &::placeholder {
+      color: $black;
+    }
+  }
+}
+
+// footer
+
+footer.footer {
+  padding: 10%;
+  color: $white;
+  background: $black;
+
+  .box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+
+    .box {
+      a {
+        display: block;
+        font-size: 1.3rem;
+        color: $white;
+        padding: 1rem 0;
+      }
+      h3 {
+        font: bold 700 3rem 'Montserrat';
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+      }
+      span {
+        font-size: 1.3rem;
+        margin: 2rem 0;
+      }
+      .social {
+        margin-top: 2rem;
+        display: flex;
+
+        i {
+          font-size: 2rem;
+          margin: 0.7rem;
+        }
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: $yellow;
+      }
+      a i:hover {
+        transform: scale(1.4);
+        color: $yellow;
+      }
+    }
+  }
+}
