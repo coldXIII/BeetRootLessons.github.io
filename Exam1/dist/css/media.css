@@ -136,8 +136,8 @@
   }
 
   section.central .statistics .benefits .benefit-item {
-    width: 15rem;
-    height: 15rem;
+    width: 14rem;
+    height: 14rem;
   }
 
   section.central .content_meatballs {
@@ -187,6 +187,12 @@ section.central .content_meatballs .image img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  section.central .statistics .benefits .benefit-item:nth-child(1) {
+    padding: 2.5rem;
+  }
+  section.central .statistics .benefits .benefit-item:nth-child(4) {
+    padding: 2rem;
   }
   section.central .statistics .benefits section.intro .intro-content {
     position: absolute;
