@@ -1,13 +1,13 @@
 {
   "name": "nodeproject",
   "version": "1.0.0",
-  "description": "",
+  "description": "NodeProject",
    "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
   "keywords":[],
-  "author": "",
+  "author": "Cold",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^5.52.1",
