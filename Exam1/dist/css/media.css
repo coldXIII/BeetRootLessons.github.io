@@ -1,0 +1,307 @@
+/* 991px */
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+/* 850px */
+@media screen and (max-width: 860px) {
+  html {
+    font-size: 55%;
+  }
+
+  section.bestseller .bestseller-title {
+    text-align: center;
+    padding: 20rem 10% 2rem;
+  }
+
+  section.bestseller {
+    padding: 1rem;
+  }
+  section.bestseller .bestseller-content {
+    gap: 1rem;
+  }
+  section.bestseller .bestseller-content .bestseller-item img {
+    width: 25rem;
+    height: 25rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  section.central .statistics {
+    padding: 0;
+  }
+  section.central .statistics .benefits .benefit-item {
+    width: 17rem;
+    height: 17rem;
+    margin: 3rem 1rem;
+    padding: 5% 4%;
+  }
+}
+/* 768px */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  header.header .logo {
+    font-size: 3rem;
+  }
+  header.header .logo object {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  header.header #menu-btn {
+    display: initial;
+  }
+  header.header nav.navbar {
+    position: absolute;
+    top: 115%;
+    right: 2rem;
+    border-radius: 0.5rem;
+    width: 30rem;
+    background: #ffc200;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    -webkit-transition: none;
+    transition: none;
+  }
+  header.header nav.navbar.active {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+  }
+  header.header nav.navbar a {
+    font-size: 2rem;
+    display: block;
+    margin: 2.5rem;
+  }
+  header.header nav.navbar a:hover {
+    color: #232323;
+    letter-spacing: 0.5rem;
+  }
+  header.header nav.navbar .fa-search {
+    font-size: 3rem;
+  }
+
+  section.intro .intro-content {
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    padding: 15%;
+  }
+
+  section.bestseller .bestseller-title {
+    text-align: center;
+    padding: 15rem 5% 2rem;
+    margin-left: 5rem;
+  }
+
+  section.bestseller .bestseller-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 30rem;
+  }
+  section.bestseller .bestseller-content .bestseller-item {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    margin-top: 7rem;
+  }
+  section.bestseller .bestseller-content .bestseller-item img {
+    width: 35rem;
+    height: 35rem;
+  }
+  section.bestseller .bestseller-content .bestseller-item img:nth-child(2) {
+    margin-left: 2rem;
+  }
+  section.bestseller .bestseller-content .bestseller-item img:nth-child(3) {
+    margin-left: 2rem;
+  }
+
+  section.central .content_oriental-taste {
+    margin: 3rem 0;
+    top: 20%;
+  }
+
+  section.central .statistics .benefits .benefit-item {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  section.central .content_meatballs {
+    margin: 3rem 0;
+    top: 70%;
+  }
+
+  section.central .content_oriental-taste .image,
+  section.central .content_meatballs .image {
+    margin: 0 2%;
+  }
+
+  section.central .content_oriental-taste .image img,
+  section.central .content_meatballs .image img {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  section.central .content_oriental-taste,
+  section.central .content_meatballs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  section.central .content_oriental-taste .image img,
+  section.central .content_meatballs .image img {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  section.central .statistics .benefits .benefit-item {
+    width: 13rem;
+    height: 13rem;
+  }
+}
+/* 450px */
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 35%;
+  }
+
+  section.central .statistics .benefits {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  section.central .statistics .benefits .benefit-item:nth-child(1) {
+    padding: 2.5rem;
+  }
+  section.central .statistics .benefits .benefit-item:nth-child(4) {
+    padding: 2rem;
+  }
+  section.central .statistics .benefits section.intro .intro-content {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  section.central
+    .statistics
+    .benefits
+    section.central
+    .statistics
+    .benefits
+    .benefit-item {
+    width: 18rem;
+    height: 18rem;
+    margin: 2rem 1rem;
+    padding: 7%;
+  }
+  section.central
+    .statistics
+    .benefits
+    section.bestseller
+    .bestseller-content
+    .bestseller-item
+    img {
+    width: 35rem;
+    height: 35rem;
+  }
+  section.central
+    .statistics
+    .benefits
+    section.central
+    .content_oriental-taste
+    .image
+    img,
+  section.central
+    .statistics
+    .benefits
+    section.central
+    .content_meatballs
+    .image
+    img {
+    width: 40rem;
+    height: 40rem;
+    margin-top: 5rem;
+  }
+  section.central
+    .statistics
+    .benefits
+    section.central
+    .content_meatballs
+    .text {
+    margin-top: 20rem;
+  }
+}
+@media screen and (max-width: 450px) and (max-width: 350px) {
+  section.intro .intro-content h1 {
+    font-size: 15rem;
+  }
+
+  section.central .content_oriental-taste .image,
+  section.central .content_meatballs .image {
+    margin: 3rem 0;
+  }
+
+  section.central .content_oriental-taste .text {
+    margin: 10rem 0;
+    text-align: center;
+  }
+
+  section.central .content_meatballs .text {
+    margin-top: 30rem;
+    text-align: center;
+  }
+
+  footer.footer .box-container {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer.footer .box-container .box h3 {
+    color: #ffc200;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 450px) and (max-width: 250px) {
+  section.bestseller .bestseller-content {
+    padding: 2rem;
+  }
+
+  section.bestseller .bestseller-content .bestseller-item {
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+    margin: 5%;
+  }
+
+  section.bestseller .bestseller-title {
+    text-align: center;
+    width: 100%;
+    padding: 5%;
+    margin: 5%;
+  }
+
+  section.subscribe form .input input {
+    width: 100%;
+    margin: 1rem auto;
+  }
+}
